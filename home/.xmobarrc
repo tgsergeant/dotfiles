@@ -1,0 +1,17 @@
+Config { font = "xft:Dejavu Sans:size=9:antialias=true"
+       , bgColor = "#2b2b2b"
+       , fgColor = "#DEDEDE"
+       , position = Top
+       , lowerOnStart = False
+       , commands = [ Run Weather "YSCB" ["-t","<station>: <tempC>C","-L","18","-H","25","--normal","#8AE234","--high","#EF2929","--low","#32e2e2"] 36000
+                    , Run Cpu ["-L","30","-H","50","--normal","#8AE234","--high","#EF2929"]  10
+                    , Run Memory ["-t","Mem: <usedratio>%"] 10
+                    , Run Com "uname" ["-s","-r"] "" 36000
+                    , Run Date "%a %b %_d %Y %H:%M" "date" 10
+                    , Run StdinReader
+                    , Run MPD ["-t", "<state>: <artist> - <title>"] 10
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " %StdinReader% }{ %mpd% | %cpu%  %memory% | %YSCB% | <fc=#ee9a00>%date%</fc>  "
+       }
