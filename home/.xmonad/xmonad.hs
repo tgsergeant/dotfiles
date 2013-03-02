@@ -8,8 +8,8 @@ import System.IO
 
 myWorkspaces = ["1: Term", "2: Web", "3: Code", "4: Media"] ++ map show [5..8] ++ ["9: VPS"]
 
-xmobarGreen = "#8AE234"
-currentWorkspaceColor = "#729fcf"
+xmobarGreen = "#b5bd68"
+currentWorkspaceColor = "#81a2be"
 
 
 myKeys = [ ((controlMask, xK_Print),    spawn "sleep 0.2; scrot -s")
@@ -30,8 +30,8 @@ main = do
         { terminal = "urxvt"
         , modMask = mod4Mask
         , borderWidth = 1
-        , normalBorderColor = "#222222"
-        , focusedBorderColor = "#cccccc"
+        , normalBorderColor = "#1d1f21"
+        , focusedBorderColor = "#c5c8c6"
         , manageHook = manageDocks <+> manageHook defaultConfig
         , layoutHook = avoidStruts $ layoutHook defaultConfig
         , logHook = dynamicLogWithPP xmobarPP
