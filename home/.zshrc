@@ -36,8 +36,8 @@ plugins=(git mercurial python django pip archlinux)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl:/home/tim/bin:/usr/local/heroku/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
+source $HOME/.zshpath #Store additions to path in a separate, unversioned file
 
 # NO BEEP
 unsetopt beep
