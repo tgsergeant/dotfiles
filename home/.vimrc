@@ -14,3 +14,6 @@ set noerrorbells
 set tabstop=4
 set expandtab
 set sw=4
+
+
+colorscheme Tomorrow-Night
