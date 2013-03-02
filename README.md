@@ -10,3 +10,13 @@ Configuration files using the following
 * Others...?
 
 Intended to be used with Homes(h?)ick
+
+Installation
+---
+Dependencies: zsh, git
+```
+curl -sL https://raw.github.com/andsens/homeshick/master/install.sh | bash
+alias homesick="$HOME/.homeshick"
+homesick clone https://github.com/tgsergeant/dotfiles.git
+homesick symlink dotfiles
+```
