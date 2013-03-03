@@ -12,8 +12,8 @@ xmobarGreen = "#b5bd68"
 currentWorkspaceColor = "#81a2be"
 
 
-myKeys = [ ((controlMask, xK_Print),    spawn "sleep 0.2; scrot -s")
-        , ((0, xK_Print),               spawn "scrot")
+myKeys = [ ((controlMask, xK_Print),    spawn "sleep 0.2; scrot -e 'mv $f /media/data/Pictures/Screenshots/scrot' -s")
+        , ((0, xK_Print),               spawn "scrot -e 'mv $f /media/data/Pictures/Screenshots/scrot'")
         , ((0, 0x1008FF11),             spawn "amixer set Master 2-")
         , ((0, 0x1008FF13),             spawn "amixer set Master 2+")
         , ((0, 0x1008FF12),             spawn "amixer set Master toggle")
