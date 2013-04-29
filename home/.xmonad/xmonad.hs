@@ -1,6 +1,7 @@
 import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
+import XMonad.Hooks.SetWMName
 import XMonad.Util.EZConfig(additionalKeys)
 import XMonad.Util.Run(spawnPipe)
 import System.IO
@@ -14,15 +15,19 @@ currentWorkspaceColor = "#81a2be"
 
 myKeys = [ ((controlMask, xK_Print),    spawn "sleep 0.2; scrot -e 'mv $f /media/data/Pictures/Screenshots/scrot' -s")
         , ((0, xK_Print),               spawn "scrot -e 'mv $f /media/data/Pictures/Screenshots/scrot'")
-        , ((0, 0x1008FF11),             spawn "amixer set Master 2-")
-        , ((0, 0x1008FF13),             spawn "amixer set Master 2+")
-        , ((0, 0x1008FF12),             spawn "amixer set Master toggle")
+        , ((0, 0x1008FF11),             spawn "amixer -c 0 set Master 2-")
+        , ((0, 0x1008FF13),             spawn "amixer -c 0 set Master 2+")
+        , ((0, 0x1008FF12),             spawn "amixer -c 0 set Master toggle")
         , ((0, 0x1008FF14),             spawn "mpc toggle")
         , ((0, 0x1008FF15),             spawn "mpc stop")
         , ((0, 0x1008FF16),             spawn "mpc prev")
         , ((0, 0x1008FF17),             spawn "mpc next")
         ]
 
+
+myManageHook = composeAll [ className =? "Xsane" --> doFloat
+
+                          ]
 
 main = do
     xmproc <- spawnPipe "xmobar"
@@ -32,7 +37,8 @@ main = do
         , borderWidth = 1
         , normalBorderColor = "#1d1f21"
         , focusedBorderColor = "#c5c8c6"
-        , manageHook = manageDocks <+> manageHook defaultConfig
+        , startupHook = setWMName "LG3D"
+        , manageHook = manageDocks <+> myManageHook <+> manageHook defaultConfig
         , layoutHook = avoidStruts $ layoutHook defaultConfig
         , logHook = dynamicLogWithPP xmobarPP
                     { ppOutput = hPutStrLn xmproc

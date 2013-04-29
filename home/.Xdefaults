@@ -1,10 +1,11 @@
 Xcursor.theme:    Neutral
 
-URxvt*font: xft:Dejavu Sans Mono:size=10
-URxvt*boldFont: xft:Dejavu Sans Mono:size=10
+URxvt*font: xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true
+URxvt*boldFont: xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true
 
 URxvt*scrollBar_right:true
 URxvt*scrollstyle:	plain
+URxvt.letterSpace: -1
 
 
 !https://github.com/chriskempson/tomorrow-theme/blob/master/Xdefaults/XresourceTomorrowNight
@@ -27,4 +28,13 @@ URxvt*scrollstyle:	plain
 *color13: #b294bb
 *color14: #8abeb7
 *color15: #ecebec
+
+
+Xft.autohint: false
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.dpi: 96
+Xft.rgba: rgb
 
