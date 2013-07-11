@@ -30,8 +30,11 @@ colorscheme Tomorrow-Night
 "Mappings
 nmap <C-e> :e#<CR>
 map <C-n> :NERDTreeToggle<CR>
-
+"Turn on spell check with F8
+map <F8> :setlocal spell! spelllang=en_au<CR>
 
 "Ctrl-P
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+
+
