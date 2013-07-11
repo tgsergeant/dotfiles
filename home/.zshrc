@@ -32,7 +32,7 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git mercurial python django pip archlinux svn)
+plugins=(git mercurial python django pip archlinux svn brew osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -55,3 +55,6 @@ key[End]=${terminfo[kend]}
 # ALIASES
 alias vps='ssh -i ~/.ssh/vps-things.pem -D 1080 tim@things.room342.net'
 alias homesick="$HOME/.homeshick"
+alias o='open'
+alias l='ls'
+alias v='vim'
