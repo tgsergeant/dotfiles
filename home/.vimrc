@@ -22,6 +22,7 @@ set nofoldenable        "Disable folding
 "set tabstop=4
 "set expandtab
 "set sw=4
+setglobal modeline
 
 set t_Co=256
 colorscheme Tomorrow-Night
