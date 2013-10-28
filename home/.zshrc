@@ -58,8 +58,8 @@ alias homesick="$HOME/.homeshick"
 alias o='open'
 alias l='ls'
 alias v='vim'
-alias slog = "svn log | less"
-alias sdiff = "svn diff | less"
+alias slog='svn log | less'
+alias sdiff='svn diff | less'
 
 
 # JUMP
