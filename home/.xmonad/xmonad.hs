@@ -26,7 +26,7 @@ myKeys = [ ((controlMask, xK_Print),    spawn "sleep 0.2; scrot -e 'python ~/bin
 
 
 myManageHook = composeAll [ className =? "Xsane" --> doFloat
-
+                          , className =? "BillOrganiser" --> doFloat
                           ]
 
 main = do
