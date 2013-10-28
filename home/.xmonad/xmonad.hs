@@ -13,11 +13,11 @@ xmobarGreen = "#b5bd68"
 currentWorkspaceColor = "#81a2be"
 
 
-myKeys = [ ((controlMask, xK_Print),    spawn "sleep 0.2; scrot -e 'mv $f /media/data/Pictures/Screenshots/scrot' -s")
-        , ((0, xK_Print),               spawn "scrot -e 'mv $f /media/data/Pictures/Screenshots/scrot'")
-        , ((0, 0x1008FF11),             spawn "amixer -c 0 set Master 2-")
-        , ((0, 0x1008FF13),             spawn "amixer -c 0 set Master 2+")
-        , ((0, 0x1008FF12),             spawn "amixer -c 0 set Master toggle")
+myKeys = [ ((controlMask, xK_Print),    spawn "sleep 0.2; scrot -e 'python ~/bin/screenshot.py $f' -s")
+        , ((0, xK_Print),               spawn "scrot -e 'python ~/bin/screenshot.py $f'")
+        , ((0, 0x1008FF11),             spawn "amixer -c 1 set Master 2-")
+        , ((0, 0x1008FF13),             spawn "amixer -c 1 set Master 2+")
+        , ((0, 0x1008FF12),             spawn "amixer -D pulse set Master 1+ toggle")
         , ((0, 0x1008FF14),             spawn "mpc toggle")
         , ((0, 0x1008FF15),             spawn "mpc stop")
         , ((0, 0x1008FF16),             spawn "mpc prev")
