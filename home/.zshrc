@@ -37,7 +37,6 @@ plugins=(git mercurial python django pip archlinux svn brew osx zsh-syntax-highl
 source $ZSH/oh-my-zsh.sh
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
-source $HOME/.zshpath #Store additions to path in a separate, unversioned file
 
 # NO BEEP
 unsetopt beep
@@ -83,3 +82,5 @@ function _completemarks {
 
 compctl -K _completemarks jump
 compctl -K _completemarks unmark
+
+source $HOME/.zshpath #Store additions to path in a separate, unversioned file
