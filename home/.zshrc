@@ -34,6 +34,8 @@ ZSH_THEME="af-magic"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git mercurial python django pip archlinux svn brew osx zsh-syntax-highlighting)
 
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+
 source $ZSH/oh-my-zsh.sh
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
