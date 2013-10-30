@@ -52,6 +52,11 @@ key[End]=${terminfo[kend]}
 [[ -n "${key[Home]}"    ]]  && bindkey  "${key[Home]}"    beginning-of-line
 [[ -n "${key[End]}"     ]]  && bindkey  "${key[End]}"     end-of-line
 
+# HIGHLIGHT OF THE FILE, RIGHT HERE
+ZSH_HIGHLIGHT_STYLES[alias]='fg=magenta,bold'
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=blue'
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=blue'
+
 
 # ALIASES
 alias vps='ssh -i ~/.ssh/vps-things.pem -D 1080 tim@things.room342.net'
