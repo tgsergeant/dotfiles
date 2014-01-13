@@ -23,6 +23,7 @@ set nofoldenable        "Disable folding
 "set expandtab
 "set sw=4
 setglobal modeline
+set updatetime=750
 
 set t_Co=256
 colorscheme Tomorrow-Night
@@ -37,5 +38,8 @@ map <F8> :setlocal spell! spelllang=en_au<CR>
 "Ctrl-P
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+let g:ctrlp_extensions = ['funky']
+nnoremap <Leader>fu :CtrlPFunky<CR>
+nnoremap <C-l> :CtrlPFunky<CR>
 
 let NERDTreeIgnore = ['\.pyc$']

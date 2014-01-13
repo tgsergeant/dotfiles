@@ -10,9 +10,6 @@
 [submodule "home/.vim/bundle/nerdtree"]
 	path = home/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "home/.vim/bundle/vim-powerline"]
-	path = home/.vim/bundle/vim-powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
 [submodule "home/.vim/bundle/vim-ctrlp"]
 	path = home/.vim/bundle/vim-ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
@@ -28,3 +25,15 @@
 [submodule "home/.vim/bundle/vim-coffee-script"]
 	path = home/.vim/bundle/vim-coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
+[submodule "home/.vim/bundle/vim-ctrlp-funky"]
+	path = home/.vim/bundle/vim-ctrlp-funky
+	url = https://github.com/tacahiroy/ctrlp-funky.git
+[submodule "home/.vim/bundle/vim-airline"]
+	path = home/.vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "home/.vim/bundle/vim-fugitive"]
+	path = home/.vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "home/.vim/bundle/vim-gitgutter"]
+	path = home/.vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
