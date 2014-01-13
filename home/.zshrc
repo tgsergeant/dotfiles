@@ -32,7 +32,7 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git mercurial python django pip archlinux svn brew osx zsh-syntax-highlighting)
+plugins=(git git-extras mercurial python django pip archlinux svn brew osx zsh-syntax-highlighting bundler gem ruby composer jira lol)
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
