@@ -37,3 +37,6 @@
 [submodule "home/.vim/bundle/vim-gitgutter"]
 	path = home/.vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "home/.vim/bundle/vim-twig"]
+	path = home/.vim/bundle/vim-twig
+	url = https://github.com/lunaru/vim-twig.git
