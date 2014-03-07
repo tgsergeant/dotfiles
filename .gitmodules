@@ -6,7 +6,7 @@
 	url = https://github.com/tpope/vim-pathogen.git
 [submodule "home/.vim/bundle/vim-latex"]
 	path = home/.vim/bundle/vim-latex
-	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
+	url = https://github.com/jcf/vim-latex.git
 [submodule "home/.vim/bundle/nerdtree"]
 	path = home/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -24,7 +24,7 @@
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "home/.vim/bundle/vim-coffee-script"]
 	path = home/.vim/bundle/vim-coffee-script
-	url = git@github.com:kchmck/vim-coffee-script.git
+	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "home/.vim/bundle/vim-ctrlp-funky"]
 	path = home/.vim/bundle/vim-ctrlp-funky
 	url = https://github.com/tacahiroy/ctrlp-funky.git
