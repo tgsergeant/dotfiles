@@ -40,3 +40,6 @@
 [submodule "home/.vim/bundle/vim-twig"]
 	path = home/.vim/bundle/vim-twig
 	url = https://github.com/lunaru/vim-twig.git
+[submodule "home/.vim/bundle/vim-mustache-handlebars"]
+	path = home/.vim/bundle/vim-mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars.git
