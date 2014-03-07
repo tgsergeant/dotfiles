@@ -60,13 +60,14 @@ ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=blue'
 
 # ALIASES
 alias vps='ssh -i ~/.ssh/vps-things.pem -D 1080 tim@things.room342.net'
-alias homesick="$HOME/.homeshick"
 alias o='open'
 alias l='ls'
 alias v='vim'
 alias slog='svn log | less'
 alias sdiff='svn diff | less'
 
+# HOMESHICK
+source $HOME/.homesick/repos/homeshick/homeshick.sh
 
 # JUMP
 export MARKPATH=$HOME/.marks
