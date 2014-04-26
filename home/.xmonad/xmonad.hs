@@ -22,6 +22,7 @@ myKeys = [ ((controlMask, xK_Print),    spawn "sleep 0.2; scrot -e 'python ~/bin
         , ((0, 0x1008FF15),             spawn "mpc stop")
         , ((0, 0x1008FF16),             spawn "mpc prev")
         , ((0, 0x1008FF17),             spawn "mpc next")
+        , ((mod4Mask, xK_F1),           spawn "systemctl suspend")
         ]
 
 

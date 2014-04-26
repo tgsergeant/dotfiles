@@ -15,7 +15,7 @@ ZSH_THEME="af-magic"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -32,7 +32,7 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras mercurial python django pip archlinux svn brew osx zsh-syntax-highlighting bundler gem ruby lol virtualenv vi-mode)
+plugins=(git git-extras mercurial python django pip archlinux svn brew osx zsh-syntax-highlighting bundler gem ruby lol virtualenv)
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
@@ -97,11 +97,3 @@ function git_prompt_info() {
 ref=$(git symbolic-ref HEAD 2> /dev/null) || return
 echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
-
-function zle-line-init zle-keymap-select {
-    RPS1="${${KEYMAP/vicmd/}/(main|viins)/[ins]} $(virtualenv_prompt_info)$my_gray%n@%m%{$reset_color%}%"
-    RPS2=$RPS1
-    zle reset-prompt
-}
-
-export KEYTIMEOUT=1
