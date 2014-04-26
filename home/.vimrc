@@ -43,3 +43,6 @@ nnoremap <Leader>fu :CtrlPFunky<CR>
 nnoremap <C-l> :CtrlPFunky<CR>
 
 let NERDTreeIgnore = ['\.pyc$']
+
+"Turn off autofolding for vim-markdown
+let g:vim_markdown_folding_disabled=1

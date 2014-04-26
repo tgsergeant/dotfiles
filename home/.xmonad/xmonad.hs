@@ -15,13 +15,14 @@ currentWorkspaceColor = "#81a2be"
 
 myKeys = [ ((controlMask, xK_Print),    spawn "sleep 0.2; scrot -e 'python ~/bin/screenshot.py $f' -s")
         , ((0, xK_Print),               spawn "scrot -e 'python ~/bin/screenshot.py $f'")
-        , ((0, 0x1008FF11),             spawn "amixer -c 1 set Master 2-")
-        , ((0, 0x1008FF13),             spawn "amixer -c 1 set Master 2+")
-        , ((0, 0x1008FF12),             spawn "amixer -D pulse set Master 1+ toggle")
+        , ((0, 0x1008FF11),             spawn "amixer set Master 3-")
+        , ((0, 0x1008FF13),             spawn "amixer set Master 3+")
+        , ((0, 0x1008FF12),             spawn "amixer set Master toggle")
         , ((0, 0x1008FF14),             spawn "mpc toggle")
         , ((0, 0x1008FF15),             spawn "mpc stop")
         , ((0, 0x1008FF16),             spawn "mpc prev")
         , ((0, 0x1008FF17),             spawn "mpc next")
+        , ((mod4Mask, xK_F1),           spawn "systemctl suspend")
         ]
 
 

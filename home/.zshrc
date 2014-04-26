@@ -15,7 +15,7 @@ ZSH_THEME="af-magic"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -32,7 +32,7 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras mercurial python django pip archlinux svn brew osx zsh-syntax-highlighting bundler gem ruby composer jira lol virtualenv node npm)
+plugins=(git git-extras mercurial python django pip archlinux svn brew osx zsh-syntax-highlighting bundler gem ruby lol virtualenv node npm)
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
@@ -60,13 +60,14 @@ ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=blue'
 
 # ALIASES
 alias vps='ssh -i ~/.ssh/vps-things.pem -D 1080 tim@things.room342.net'
-alias homesick="$HOME/.homeshick"
 alias o='open'
 alias l='ls'
 alias v='vim'
 alias slog='svn log | less'
 alias sdiff='svn diff | less'
 
+# HOMESHICK
+source $HOME/.homesick/repos/homeshick/homeshick.sh
 
 # JUMP
 export MARKPATH=$HOME/.marks
@@ -91,3 +92,8 @@ compctl -K _completemarks jump
 compctl -K _completemarks unmark
 
 source $HOME/.zshpath #Store additions to path in a separate, unversioned file
+
+function git_prompt_info() {
+ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
+}

@@ -1,7 +1,7 @@
-Config { font = "xft:Dejavu Sans:size=11:antialias=true"
+Config { font = "xft:Dejavu Sans:size=8:antialias=true"
        , bgColor = "#1d1f21"
        , fgColor = "#c5c8c6"
-       , position = Top
+       , position = TopW R 95
        , lowerOnStart = False
        , commands = [ Run Weather "YSCB" ["-t","<station>: <tempC>C","-L","18","-H","25","--normal","#8AE234","--high","#cc6666","--low","#8abeb7"] 36000
                     , Run Cpu ["-L","30","-H","50","--normal","#8AE234","--high","#cc6666"]  10
