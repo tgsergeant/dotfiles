@@ -40,9 +40,12 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
 let g:ctrlp_extensions = ['funky']
 nnoremap <Leader>fu :CtrlPFunky<CR>
-nnoremap <C-l> :CtrlPFunky<CR>
+nnoremap <C-k> :CtrlPFunky<CR>
 
 let NERDTreeIgnore = ['\.pyc$']
+
+"gist-vim
+let g:gist_post_private = 1
 
 "Turn off autofolding for vim-markdown
 let g:vim_markdown_folding_disabled=1

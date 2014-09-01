@@ -9,3 +9,7 @@
 	up-sub = "submodule foreach 'git fetch origin --tags; git checkout master; git pull' && git pull && git submodule update --init --recursive"
 [core]
 	editor = vim
+[branch]
+	autosetuprebase = always
+[github]
+	user = tgsergeant
